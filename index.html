@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/prism.css" />
+    <title>Bootstrap Sunumu</title>
+  </head>
+
+  <body>
+    <div class="container-fluid text-white" style="background-color: #2c2c54;">
+      <code id="example-container-fluid">container-fluid</code>
+      <div id="bootstrapSlide" class="carousel slide" data-ride="carousel" data-interval="0">
+        <ol class="carousel-indicators">
+          <li data-target="#bootstrapSlide" data-slide-to="0" class="active"></li>
+          <li data-target="#bootstrapSlide" data-slide-to="1"></li>
+          <li data-target="#bootstrapSlide" data-slide-to="2"></li>
+          <li data-target="#bootstrapSlide" data-slide-to="3"></li>
+          <li data-target="#bootstrapSlide" data-slide-to="4"></li>
+          <li data-target="#bootstrapSlide" data-slide-to="5"></li>
+          <li data-target="#bootstrapSlide" data-slide-to="6"></li>
+          <li data-target="#bootstrapSlide" data-slide-to="7"></li>
+          <li data-target="#bootstrapSlide" data-slide-to="8"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="font-size: 1.5rem">
+            <div class="container">
+              <div class="row vh-100">
+                <div class="col-6 my-auto">
+                  <h1 class="display-4 text-center"><strong>Bootstrap</strong> 4</h1>
+                </div>
+                <div class="col-6 d-flex justify-content-center my-auto"><img class="img-fluid" src="./images/bootstrap-stack.png" /></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="font-size: 1.5rem">
+            <div class="container">
+              <div class="row vh-100">
+                <div class="col-md-7 my-auto">
+                  <h1>Bootstrap Nedir?</h1>
+                  <p class="text-justify">
+                    Bootstrap, web siteleri veya web uygulamaları geliştirmek için kullanılan; özellikle responsive ve mobil odaklı, ücretsiz ve açık kaynak bir front-end
+                    framework’tür <span class="text-muted">(yazılım iskeletidir)</span>.
+                  </p>
+                  <p class="text-justify">
+                    Tipografik ögeler, carousel, tablolar, slider, imajlar, dropdown menüler, modal pencereler, navigasyon bar, butonlar, sayfalandırma, thumbnaili uyarı, etiketler
+                    ve yükleme barları, bilgilendirme balonları vb. gibi her web uygulamasında olan bileşenleri barındırır.
+                  </p>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center my-auto">
+                  <img class="img-fluid rounded shadow" src="./images/bootstrap-components.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="font-size: 1.5rem">
+            <div class="container">
+              <div class="row vh-100">
+                <div class="col my-auto">
+                  <h1>Neden Bootstrap Kullanmalı?</h1>
+                  <ul class="list-group text-justify">
+                    <li>
+                      Tasarımcılara büyük kolaylıklar sağlayarak zamandan kazanç sağlar. Sıfırdan aynı kodları tekrar tekrar kodlamak yerine önceden hazırlanmış kod kütüphanesinden
+                      yardım alarak verimli bir süreçte projenizi geliştirirsiniz.
+                    </li>
+                    <li>Tamamen <strong>responsive</strong> tasarıma uygun bir alt yapıdadır. Birbirinden farklı çözünürlükteki ekranlara uyumlu bir şekilde çalışacaktır.</li>
+                    <li>
+                      Bootstrap özelleştirilebilir olduğu gibi geliştirilmeye de açık bir kütüphanedir ve ihtiyaçlarınız doğrultusunda ve kodlama bilginizle istediğiniz kadar
+                      geliştirme yapmanız mümkün.
+                    </li>
+                    <li>Farklı web tarayacılarında stabil bir şekilde çalışabilecek şekilde Twitter çalışanları tarafından analiz edilip tasarlanmıştır.</li>
+                    <li>
+                      Web arayüz üzerinde çalışma yapıyorsanız bootstrap'i entagre etmek oldukça hızlı ve kolaydır. Tek gereken gerekli CSS ve JS dosyalarını HTML dosyanıza
+                      eklemek.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="container-page" class="carousel-item">
+            <div id="container" class="container">
+              <div class="row vh-100">
+                <code id="example-container">container</code>
+                <div class="col my-auto" style="font-size: 1.5rem">
+                  <h1>Konteyner <span class="text-muted">(Container)</span> Sistemi</h1>
+                  <p class="text-justify">
+                    Konteyner sistemi Bootstrap içindeki en temel ve gerekli düzen öğesidir. Web arayüzünü sabit bir genişlik ile kaplayarak ekran oranına göre içeriklerin sabit
+                    kalmasını sağlar.
+                  </p>
+                  <br />
+                  <p>Bootstrap'de sistemeri ve diğer bileşenleri kullanmak için ilgili sınıfı <span class="text-muted"></span> elementinize eklemeniz yeterli!</p>
+                  <div class="accordion" id="container-example-accordion" style="font-size: 1.5rem">
+                    <div class="card bg-dark">
+                      <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                          <a class="btn btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            .container-fluid
+                          </a>
+                        </h2>
+                      </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#container-example-accordion">
+                        <div class="card-body">
+                          <div class="code-example d-flex justify-content-center">
+                            <code class="language-html">
+                              &lt;div class="container-fluid"> &lt;!-- Content here --> &lt;/div>
+                            </code>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark">
+                      <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                          <a class="btn btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            .container
+                          </a>
+                        </h2>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#container-example-accordion">
+                        <div class="card-body">
+                          <div class="code-example d-flex justify-content-center">
+                            <code class="language-html">
+                              &lt;div class="container"> &lt;!-- Content here --> &lt;/div>
+                            </code>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="font-size: 1.5rem">
+            <div class="container">
+              <div class="row vh-100">
+                <div class="col my-auto">
+                  <h1>Izgara <span class="text-muted">(Grid)</span> Sistemi</h1>
+                  <p class="text-justify">
+                    Izgara sistemi web arayüzünün belirli standartlara uygun bir şekilde sayfa planı oluşturmaya yardımcı olan sistemdir.
+                  </p>
+                  <p class="text-justify">
+                    Sayfa düzenini 12 ayrı sütuna bölerek bir içeriğin bu sütunlardan ne kadar pay alacağı tasarlanabilir.
+                  </p>
+                  <br class="d-none d-xl-block" />
+                  <table
+                    class="table table-sm table-responsive text-white font-weight-light mx-auto d-none d-xl-block"
+                    style="font-size: 1.2rem; margin: auto;
+                  width: 70% !important; "
+                  >
+                    <caption>
+                      Izgara Seçenekleri
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th class="text-center">
+                          Extra small<br />
+                          <small>&lt;576px</small>
+                        </th>
+                        <th class="text-center">
+                          Small<br />
+                          <small>≥576px</small>
+                        </th>
+                        <th class="text-center">
+                          Medium<br />
+                          <small>≥768px</small>
+                        </th>
+                        <th class="text-center">
+                          Large<br />
+                          <small>≥992px</small>
+                        </th>
+                        <th class="text-center">
+                          Extra large<br />
+                          <small>≥1200px</small>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="text-nowrap" scope="row">Max container width</th>
+                        <td>None (auto)</td>
+                        <td>540px</td>
+                        <td>720px</td>
+                        <td>960px</td>
+                        <td>1140px</td>
+                      </tr>
+                      <tr>
+                        <th class="text-nowrap" scope="row">Class prefix</th>
+                        <td><code>.col-</code></td>
+                        <td><code>.col-sm-</code></td>
+                        <td><code>.col-md-</code></td>
+                        <td><code>.col-lg-</code></td>
+                        <td><code>.col-xl-</code></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <br />
+                  <div class="row border border-danger">
+                    <div class="col border">col</div>
+                    <div class="col-6 border">col-6</div>
+                  </div>
+                  <br />
+                  <div class="row border border-danger">
+                    <div class="col-2 border">col-2</div>
+                    <div class="col-5 border">col-5</div>
+                    <div class="col-3 border">col-3</div>
+                    <div class="col border">col</div>
+                  </div>
+                  <br />
+                  <div class="row border border-danger">
+                    <div class="col-sm-6 border">col-sm-6</div>
+                    <div class="col-sm-6 border">col-sm-6</div>
+                    <div class="col-md-6 border">col-md-6</div>
+                    <div class="col-md-6 border">col-md-6</div>
+                    <div class="col-lg-6 border">col-lg-6</div>
+                    <div class="col-lg-6 border">col-lg-6</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row vh-100">
+                <div class="col-12 my-auto" style="font-size: 1.5rem">
+                  <h1>İçerik <span class="text-muted">(Content)</span></h1>
+                  <p>Başlıklar, gövde metinleri, listeler, tablolar gibi birçok içeriği Bootstrap standartlarına uyarlanmış olarak kullanılabilir.</p>
+                </div>
+                <div class="col-3 d-md-none d-lg-block">
+                  <h1>h1.</h1>
+                  <p class="h2">h2.</p>
+                  <h3>h3.</h3>
+                </div>
+                <div class="col-3 d-md-none d-lg-block">
+                  <h1 class="display-3">Display 3</h1>
+                  <h1 class="display-4">Display 4</h1>
+                </div>
+                <div class="col-3 d-md-none d-lg-block">
+                  <blockquote class="blockquote text-center">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+                </div>
+                <div class="col-3 d-md-none d-lg-block">
+                  <table class="table table-striped table-dark">
+                    <thead class="thead-light">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="mt-1">
+                  Gibi bir çok içerik düzenlemelerine
+                  <a href="https://getbootstrap.com/docs/4.3/content/" class="btn btn-outline-primary btn-sm" target="_blank">Bootstrap dokümantasyondan</a> ulaşabilirsiniz.
+                </p>
+                <div id="content-slide-info">
+                  <p>Konsoldan <kbd>F12</kbd> inceleyebilirsiniz.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="components-page" class="carousel-item">
+            <div class="container">
+              <div class="row vh-100">
+                <div class="col-12 my-auto" style="font-size: 1.5rem">
+                  <h1>Bileşenler <span class="text-muted">(Components)</span></h1>
+                  <p>Aynı şekilde her web arayüzünde sıkça kullanılabilen bileşenleri bootstrap standartlarına uygun biçimde kolayca kullanılabilir. Bazı bileşenlere bakalım:</p>
+                </div>
+                <div class="col-12">
+                  <p class="text-center m-0">Akordeon <span class="text-muted">(Accordion)</span></p>
+                  <div class="accordion" id="components-examples-accordion">
+                    <div class="card bg-dark">
+                      <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                          <a class="btn btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Uyarılar <span class="text-muted">(Alerts)</span>
+                          </a>
+                        </h2>
+                      </div>
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#components-examples-accordion">
+                        <div class="card-body">
+                          <div class="alert alert-primary" role="alert">
+                            A simple primary alert—check it out!
+                          </div>
+                          <div class="alert alert-secondary" role="alert">
+                            A simple secondary alert—check it out!
+                          </div>
+                          <div class="alert alert-success" role="alert">
+                            A simple success alert—check it out!
+                          </div>
+                          <div class="alert alert-danger" role="alert">
+                            A simple danger alert—check it out!
+                          </div>
+                          <div class="alert alert-warning" role="alert">
+                            A simple warning alert—check it out!
+                          </div>
+                          <div class="alert alert-info" role="alert">
+                            A simple info alert—check it out!
+                          </div>
+                          <div class="alert alert-light" role="alert">
+                            A simple light alert—check it out!
+                          </div>
+                          <div class="alert alert-dark" role="alert">
+                            A simple dark alert—check it out!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark">
+                      <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                          <a class="btn btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Butonlar <span class="text-muted">(Buttons)</span>
+                          </a>
+                        </h2>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#components-examples-accordion" style="background-color: rgb(44, 44, 44);">
+                        <div class="card-body d-flex justify-content-around">
+                          <button type="button" class="btn btn-primary">Primary</button>
+                          <button type="button" class="btn btn-secondary">Secondary</button>
+                          <button type="button" class="btn btn-success">Success</button>
+                          <button type="button" class="btn btn-danger">Danger</button>
+                          <button type="button" class="btn btn-warning">Warning</button>
+                          <button type="button" class="btn btn-info">Info</button>
+                          <button type="button" class="btn btn-light">Light</button>
+                          <button type="button" class="btn btn-dark">Dark</button>
+                        </div>
+                        <div class="card-body d-flex justify-content-around">
+                          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                            <button type="button" class="btn btn-secondary">1</button>
+                            <button type="button" class="btn btn-secondary">2</button>
+                            <div class="btn-group" role="group">
+                              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <a class="dropdown-item" href="#">Dropdown link</a>
+                                <a class="dropdown-item" href="#">Dropdown link</a>
+                              </div>
+                            </div>
+                          </div>
+                          <nav aria-label="...">
+                            <ul class="pagination">
+                              <li class="page-item disabled">
+                                <span class="page-link">Previous</span>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item active" aria-current="page">
+                                <span class="page-link">
+                                  2
+                                  <span class="sr-only">(current)</span>
+                                </span>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                        <div class="card-body d-flex justify-content-around">
+                          <button type="button" class="btn btn-outline-primary">Primary</button>
+                          <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                          <button type="button" class="btn btn-outline-success">Success</button>
+                          <button type="button" class="btn btn-outline-danger">Danger</button>
+                          <button type="button" class="btn btn-outline-warning">Warning</button>
+                          <button type="button" class="btn btn-outline-info">Info</button>
+                          <button type="button" class="btn btn-outline-light">Light</button>
+                          <button type="button" class="btn btn-outline-dark">Dark</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark">
+                      <div class="card-header" id="headingthree">
+                        <h2 class="mb-0">
+                          <a class="btn btn-block" data-toggle="collapse" data-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
+                            Kartlar <span class="text-muted">(Cards)</span>
+                          </a>
+                        </h2>
+                      </div>
+                      <div id="collapsethree" class="collapse" aria-labelledby="headingthree" data-parent="#components-examples-accordion">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-around">
+                            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                              <div class="card-header">Header</div>
+                              <div class="card-body">
+                                <h5 class="card-title">Primary card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              </div>
+                            </div>
+                            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                              <div class="card-header">Header</div>
+                              <div class="card-body">
+                                <h5 class="card-title">Success card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              </div>
+                            </div>
+                            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                              <div class="card-header">Header</div>
+                              <div class="card-body">
+                                <h5 class="card-title">Dark card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-around">
+                            <div class="card-group text-dark">
+                              <div class="card">
+                                <img src="./images/image-cap.png" class="card-img-top" />
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">
+                                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                  </p>
+                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                              <div class="card" style="width: 18rem;">
+                                <img src="./images/image-cap.png" class="card-img-top" />
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <img src="./images/image-cap.png" class="card-img-top" />
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">
+                                    This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.
+                                  </p>
+                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark">
+                      <div class="card-header" id="headingfour">
+                        <h2 class="mb-0">
+                          <a class="btn btn-block" data-toggle="collapse" data-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
+                            Formlar <span class="text-muted">(Forms)</span>
+                          </a>
+                        </h2>
+                      </div>
+                      <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#components-examples-accordion">
+                        <div class="card-body">
+                          <form id="example-form" class="needs-validation">
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required />
+                                <div class="invalid-tooltip">
+                                  Please enter a email.
+                                </div>
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required />
+                                <div class="invalid-tooltip">
+                                  Please enter a password.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="inputAddress">Address</label>
+                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" />
+                            </div>
+                            <div class="form-group">
+                              <label for="inputAddress2">Address 2</label>
+                              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity" />
+                              </div>
+                              <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                  <option selected>Choose...</option>
+                                  <option>...</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip" />
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck" />
+                                <label class="form-check-label" for="gridCheck">
+                                  Check me out
+                                </label>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark">
+                      <div class="card-header" id="headingfive">
+                        <h2 class="mb-0">
+                          <a class="btn btn-block" data-toggle="collapse" data-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
+                            Yönlendirme Çubukları <span class="text-muted">(Navbars)</span>
+                          </a>
+                        </h2>
+                      </div>
+                      <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#components-examples-accordion">
+                        <div class="card-body">
+                          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                            <a class="navbar-brand" href="#">Navbar</a>
+                            <button
+                              class="navbar-toggler"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#navbarColor01"
+                              aria-controls="navbarColor01"
+                              aria-expanded="false"
+                              aria-label="Toggle navigation"
+                            >
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarColor01">
+                              <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">About</a>
+                                </li>
+                              </ul>
+                              <form class="form-inline">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                              </form>
+                            </div>
+                          </nav>
+                          <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                            <a class="navbar-brand" href="#">Navbar</a>
+                            <button
+                              class="navbar-toggler"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#navbarColor02"
+                              aria-controls="navbarColor02"
+                              aria-expanded="false"
+                              aria-label="Toggle navigation"
+                            >
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarColor02">
+                              <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">About</a>
+                                </li>
+                              </ul>
+                              <form class="form-inline">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                              </form>
+                            </div>
+                          </nav>
+                          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+                            <a class="navbar-brand" href="#">Navbar</a>
+                            <button
+                              class="navbar-toggler"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#navbarColor03"
+                              aria-controls="navbarColor03"
+                              aria-expanded="false"
+                              aria-label="Toggle navigation"
+                            >
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarColor03">
+                              <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">About</a>
+                                </li>
+                              </ul>
+                              <form class="form-inline">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                              </form>
+                            </div>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark">
+                      <div class="card-header" id="headingSix">
+                        <h2 class="mb-0">
+                          <a class="btn btn-block" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                            Liste Grupları <span class="text-muted">(List group)</span>
+                          </a>
+                        </h2>
+                      </div>
+                      <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#components-examples-accordion">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="list-group col-md-6">
+                              <a href="#" class="list-group-item list-group-item-action active">
+                                <div class="d-flex w-100 justify-content-between">
+                                  <h5 class="mb-1">List group item heading</h5>
+                                  <small>3 days ago</small>
+                                </div>
+                                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                <small>Donec id elit non mi porta.</small>
+                              </a>
+                              <a href="#" class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                  <h5 class="mb-1">List group item heading</h5>
+                                  <small class="text-muted">3 days ago</small>
+                                </div>
+                                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                <small class="text-muted">Donec id elit non mi porta.</small>
+                                <span class="badge badge-primary badge-pill">14</span>
+                              </a>
+                              <a href="#" class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                  <h5 class="mb-1">List group item heading</h5>
+                                  <small class="text-muted">3 days ago</small>
+                                </div>
+                                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                <small class="text-muted">Donec id elit non mi porta.</small>
+                              </a>
+                            </div>
+                            <div class="col-6">
+                              <ul class="list-group list-group-horizontal">
+                                <li class="list-group-item bg-dark text-white">Cras justo odio</li>
+                                <li class="list-group-item list-group-item-secondary">Dapibus ac facilisis in</li>
+                                <li class="list-group-item list-group-item-warning">Morbi leo risus</li>
+                              </ul>
+                              <br />
+                              <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+                                  Cras justo odio
+                                  <span class="badge badge-primary badge-pill">14</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+                                  Dapibus ac facilisis in
+                                  <span class="badge badge-primary badge-pill">2</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+                                  Morbi leo risus
+                                  <span class="badge badge-primary badge-pill">1</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark">
+                      <div class="card-header">
+                        <h2 class="mb-0">
+                          <a class="btn btn-block" data-toggle="modal" data-target="#exampleModalCenter"> Açılır Pencereler <span class="text-muted">(Modals)</span> </a>
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="card bg-dark">
+                      <div class="card-header">
+                        <h2 class="mb-0">
+                          <a class="btn btn-block" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
+                            Bilgi balonları <span class="text-muted">(Popovers)</span>
+                          </a>
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="card bg-dark">
+                      <div class="card-header">
+                        <h2 class="mb-0">
+                          <a class="btn btn-block"> Bildirimler <span class="text-muted">(Toasts)</span> </a>
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-1">
+                    Gibi bir çok bileşene
+                    <a href="https://getbootstrap.com/docs/4.3/components" class="btn btn-outline-primary btn-sm" target="_blank">Bootstrap dokümantasyondan</a> ulaşabilirsiniz.
+                  </p>
+                  <div id="content-slide-info">
+                    <p>Konsoldan <kbd>F12</kbd> inceleyebilirsiniz.</p>
+                  </div>
+                </div>
+              </div>
+              <div style="position: absolute; bottom: 10px; right: 0; z-index: 15;">
+                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <img src="./images/ahmetcetinkaya-logo.png" class="rounded mr-2" width="25px" />
+                    <strong class="mr-auto">Bildirimler</strong>
+                    <small class="text-muted">just now</small>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="toast-body text-dark">
+                    See? Just like this.
+                  </div>
+                </div>
+                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <img src="./images/ahmetcetinkaya-logo.png" class="rounded mr-2 img-fluid" width="25px" />
+                    <strong class="mr-auto">Toasts</strong>
+                    <small class="text-muted">2 seconds ago</small>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="toast-body text-dark">
+                    Heads up, toasts will stack automatically
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade text-dark" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+                      vestibulum at eros.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row vh-100">
+                <div class="col-12 my-auto" style="font-size: 1.5rem">
+                  <h1>Araçlar <span class="text-muted">(Utilities)</span></h1>
+                  <p>Aynı şekilde web arayüzünlerinde sıkça kullanılabilen CSS komutlarını sadece class ekleyerek elemente dahil edebilirsiniz.</p>
+                </div>
+                <div class="col-12">
+                  <div class="accordion" id="components-examples-accordion">
+                    <div class="card bg-dark">
+                      <div class="card-header" id="heading1">
+                        <h2 class="mb-0">
+                          <a class="btn btn-block" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            Çerçeveler <span class="text-muted">(Borders)</span>
+                          </a>
+                        </h2>
+                      </div>
+                      <div id="collapseOne" class="collapse" aria-labelledby="heading1" data-parent="#components-examples-accordion">
+                        <div class="card-body d-flex justify-content-around">
+                          <div class="border" style="width:75px; height: 75px;"></div>
+                          <div class="border-top" style="width:75px; height: 75px;"></div>
+                          <div class="border-right" style="width:75px; height: 75px;"></div>
+                          <div class="border-bottom" style="width:75px; height: 75px;"></div>
+                          <div class="border-left" style="width:75px; height: 75px;"></div>
+                        </div>
+                        <div class="card-body d-flex justify-content-around">
+                          <div class="border border-primary" style="width:75px; height: 75px;"></div>
+                          <div class="border border-secondary" style="width:75px; height: 75px;"></div>
+                          <div class="border border-success" style="width:75px; height: 75px;"></div>
+                          <div class="border border-danger" style="width:75px; height: 75px;"></div>
+                          <div class="border border-warning" style="width:75px; height: 75px;"></div>
+                          <div class="border border-info" style="width:75px; height: 75px;"></div>
+                          <div class="border border-light" style="width:75px; height: 75px;"></div>
+                          <div class="border border-dark" style="width:75px; height: 75px;"></div>
+                          <div class="border border-white" style="width:75px; height: 75px;"></div>
+                        </div>
+                        <div class="card-body d-flex justify-content-around">
+                          <img src="./images/75x75-cap.png" class="rounded" />
+                          <img src="./images/75x75-cap.png" class="rounded-top" />
+                          <img src="./images/75x75-cap.png" class="rounded-right" />
+                          <img src="./images/75x75-cap.png" class="rounded-bottom" />
+                          <img src="./images/75x75-cap.png" class="rounded-left" />
+                          <img src="./images/75x75-cap.png" class="rounded-circle" />
+                          <img src="./images/75x75-cap.png" class="rounded-pill" />
+                          <img src="./images/75x75-cap.png" class="rounded-0" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card bg-dark">
+                    <div class="card-header" id="heading2">
+                      <h2 class="mb-0">
+                        <a class="btn btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                          Renkler <span class="text-muted">(Colors)</span>
+                        </a>
+                      </h2>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#components-examples-accordion" style="background-color: rgb(44, 44, 44);">
+                      <div class="card-body d-flex">
+                        <p class="text-primary">.text-primary</p>
+                        <p class="text-secondary">.text-secondary</p>
+                        <p class="text-success">.text-success</p>
+                        <p class="text-danger">.text-danger</p>
+                        <p class="text-warning">.text-warning</p>
+                        <p class="text-info">.text-info</p>
+                        <p class="text-light bg-dark">.text-light</p>
+                        <p class="text-dark bg-light">.text-dark</p>
+                        <p class="text-body bg-light">.text-body</p>
+                        <p class="text-muted bg-light">.text-muted</p>
+                        <p class="text-white bg-dark">.text-white</p>
+                        <p class="text-black-50 bg-light">.text-black-50</p>
+                        <p class="text-white-50 bg-dark">.text-white-50</p>
+                      </div>
+                      <div class="card-body">
+                        <div class="p-1 bg-primary text-white">.bg-primary</div>
+                        <div class="p-1  bg-secondary text-white">.bg-secondary</div>
+                        <div class="p-1  bg-success text-white">.bg-success</div>
+                        <div class="p-1  bg-danger text-white">.bg-danger</div>
+                        <div class="p-1  bg-warning text-dark">.bg-warning</div>
+                        <div class="p-1  bg-info text-white">.bg-info</div>
+                        <div class="p-1  bg-light text-dark">.bg-light</div>
+                        <div class="p-1  bg-dark text-white">.bg-dark</div>
+                        <div class="p-1  bg-white text-dark">.bg-white</div>
+                        <div class="p-1  bg-transparent text-dark">.bg-transparent</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card bg-dark">
+                    <div class="card-header" id="heading3">
+                      <h2 class="mb-0">
+                        <a class="btn btn-block" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                          Display
+                        </a>
+                      </h2>
+                    </div>
+                    <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#components-examples-accordion">
+                      <div class="card-body text-center">
+                        <code>.d-{none / inline / inline-block / block / table / table-cell / table-row / flex / inline-flex}-{sm, md, lg, ve xl.}</code>
+                        <div class="d-inline p-2 bg-primary text-white mb-2">d-inline</div>
+                        <span class="d-block p-2 bg-primary text-white mt-2 mb-2">d-block</span>
+
+                        <div class="card-body">
+                          <table class="mx-auto">
+                            <thead>
+                              <tr>
+                                <th>Screen Size</th>
+                                <th>Class</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Tüm boyutlarda gizle</td>
+                                <td><code class=" highlighter-rouge">.d-none </code></td>
+                              </tr>
+                              <tr>
+                                <td>Sadece xs'de gizle</td>
+                                <td><code class="highlighter-rouge">.d-none .d-sm-block</code></td>
+                              </tr>
+                              <tr>
+                                <td>Sadece sm'de gizle</td>
+                                <td><code class="highlighter-rouge">.d-sm-none .d-md-block</code></td>
+                              </tr>
+                              <tr>
+                                <td>Sadece md'de gizle</td>
+                                <td><code class="highlighter-rouge">.d-md-none .d-lg-block</code></td>
+                              </tr>
+                              <tr>
+                                <td>Sadece lg'de gizle</td>
+                                <td><code class="highlighter-rouge">.d-lg-none .d-xl-block</code></td>
+                              </tr>
+                              <tr>
+                                <td>Sadece xl'de gizle</td>
+                                <td><code class="highlighter-rouge">.d-xl-none</code></td>
+                              </tr>
+                              <tr>
+                                <td>Tüm boyutlarda Göster</td>
+                                <td><code class="highlighter-rouge">.d-block</code></td>
+                              </tr>
+                              <tr>
+                                <td>Sadece xs'de göster</td>
+                                <td><code class="highlighter-rouge">.d-block .d-sm-none</code></td>
+                              </tr>
+                              <tr>
+                                <td>Sadece sm'de göster</td>
+                                <td><code class="highlighter-rouge">.d-none .d-sm-block .d-md-none</code></td>
+                              </tr>
+                              <tr>
+                                <td>Sadece md'de göster</td>
+                                <td><code class="highlighter-rouge">.d-none .d-md-block .d-lg-none</code></td>
+                              </tr>
+                              <tr>
+                                <td>Sadece lg'de göster</td>
+                                <td><code class="highlighter-rouge">.d-none .d-lg-block .d-xl-none</code></td>
+                              </tr>
+                              <tr>
+                                <td>Sadece xl'de göster</td>
+                                <td><code class="highlighter-rouge">.d-none .d-xl-block</code></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" card bg-dark">
+                    <div class="card-header" id="heading4">
+                      <h2 class="mb-0">
+                        <a class="btn btn-block" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                          Flex
+                        </a>
+                      </h2>
+                    </div>
+                    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#components-examples-accordion">
+                      <div class="card-body">
+                        <div class="d-flex flex-row mb-3 border border-secondary">
+                          <div class="p-2 border ">Flex item 1</div>
+                          <div class="p-2 border ">Flex item 2</div>
+                          <div class="p-2 border ">Flex item 3</div>
+                        </div>
+                        <div class="d-flex flex-row-reverse border border-secondary">
+                          <div class="p-2 border ">Flex item 1</div>
+                          <div class="p-2 border ">Flex item 2</div>
+                          <div class="p-2 border ">Flex item 3</div>
+                        </div>
+                        <div class="d-flex justify-content-start border border-secondary mb-3">
+                          <div class="p-2 border ">Flex item</div>
+                          <div class="p-2 border ">Flex item</div>
+                          <div class="p-2 border ">Flex item</div>
+                        </div>
+                        <div class="d-flex justify-content-end border  border-secondary mb-3">
+                          <div class="p-2 border ">Flex item</div>
+                          <div class="p-2 border ">Flex item</div>
+                          <div class="p-2 border ">Flex item</div>
+                        </div>
+                        <div class="d-flex justify-content-center border border-secondary mb-3">
+                          <div class="p-2 border ">Flex item</div>
+                          <div class="p-2 border ">Flex item</div>
+                          <div class="p-2 border ">Flex item</div>
+                        </div>
+                        <div class="d-flex justify-content-between border  border-secondary mb-3">
+                          <div class="p-2 border ">Flex item</div>
+                          <div class="p-2 border ">Flex item</div>
+                          <div class="p-2 border ">Flex item</div>
+                        </div>
+                        <div class="d-flex justify-content-around border border-secondary">
+                          <div class="p-2 border ">Flex item</div>
+                          <div class="p-2 border ">Flex item</div>
+                          <div class="p-2 border ">Flex item</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card bg-dark">
+                    <div class="card-header" id="heading5">
+                      <h2 class="mb-0">
+                        <a class="btn btn-block" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                          Float
+                        </a>
+                      </h2>
+                    </div>
+                    <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#components-examples-accordion">
+                      <div class="card-body">
+                        <div class="float-left">Float left on all viewport sizes</div>
+                        <br />
+                        <div class="float-right">Float right on all viewport sizes</div>
+                        <br />
+                        <div class="float-none">Don't float on all viewport sizes</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card bg-dark">
+                    <div class="card-header" id="heading6">
+                      <h2 class="mb-0">
+                        <a class="btn btn-block" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                          Overflow
+                        </a>
+                      </h2>
+                    </div>
+                    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#components-examples-accordion">
+                      <div class="card-body text-dark">
+                        <div class="d-flex justify-content-center">
+                          <div class="overflow-auto p-3 mb-3 mb-md-0 mr-md-3 bg-light" style="max-width: 260px; max-height: 100px;">
+                            This is an example of using <code>.overflow-auto</code> on an element with set width and height dimensions. By design, this content will vertically
+                            scroll.
+                          </div>
+                          <div class="overflow-hidden p-3 bg-light" style="max-width: 260px; max-height: 100px;">
+                            This is an example of using <code>.overflow-hidden</code> on an element with set width and height dimensions.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card bg-dark">
+                    <div class="card-header" id="heading7">
+                      <h2 class="mb-0">
+                        <a class="btn btn-block" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                          Sizing
+                        </a>
+                      </h2>
+                    </div>
+                    <div id="collapse7" class="collapse mx-auto" aria-labelledby="heading7" data-parent="#components-examples-accordion">
+                      <div class="text-dark border border-secondary">
+                        <div class="w-25" style="background-color: #eee;">Width 25%</div>
+                        <div class="w-50" style="background-color: #eee;">Width 50%</div>
+                        <div class="w-75" style="background-color: #eee;">Width 75%</div>
+                        <div class="w-100" style="background-color: #eee;">Width 100%</div>
+                        <div class="w-auto" style="background-color: #eee;">Width auto</div>
+                      </div>
+                      <div class="text-dark mt-2 mb-2 border border-secondary">
+                        <div style="height: 100px;">
+                          <div class="h-25 d-inline-block" style="width: 120px; background-color: #eee">Height 25%</div>
+                          <div class="h-50 d-inline-block" style="width: 120px; background-color: #eee">Height 50%</div>
+                          <div class="h-75 d-inline-block" style="width: 120px; background-color: #eee">Height 75%</div>
+                          <div class="h-100 d-inline-block" style="width: 120px; background-color: #eee">Height 100%</div>
+                          <div class="h-auto d-inline-block" style="width: 120px; background-color: #eee">Height auto</div>
+                        </div>
+                      </div>
+                      <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+                        <div class="mh-100 border border-secondary" style="width: 100px; height: 200px; background-color: rgba(0,0,255,0.1);">Max-height 100%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card bg-dark">
+                    <div class="card-header" id="heading8">
+                      <h2 class="mb-0">
+                        <a class="btn btn-block" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                          Spacing
+                        </a>
+                      </h2>
+                    </div>
+                    <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#components-examples-accordion">
+                      <div class="card-body d-flex justify-content-around" style="font-size: 1.1rem;">
+                        <code
+                          >{
+                          <ul>
+                            <li>m <span class=" text-muted">margin</span></li>
+                            <li>p <span class="text-muted">padding</span></li>
+                          </ul>
+                          }
+                        </code>
+                        <code
+                          >{
+                          <ul>
+                            <li>blank <span class="text-muted">4 sides</span></li>
+                            <li>t <span class="text-muted">top</span></li>
+                            <li>b <span class="text-muted">bottom</span></li>
+                            <li>l <span class="text-muted">left</span></li>
+                            <li>r <span class="text-muted">right</span></li>
+                            <li>x <span class="text-muted">left and right</span></li>
+                            <li>y <span class="text-muted">top and bottom</span></li>
+                          </ul>
+                          }
+                        </code>
+                        <code class="my-auto">-</code>
+                        <code
+                          >{
+                          <ul>
+                            <li>m</li>
+                            <li>md</li>
+                            <li>lg</li>
+                            <li>xl</li>
+                          </ul>
+                          }
+                        </code>
+                        <code class="my-auto">-</code>
+                        <code
+                          >{
+                          <ul>
+                            <li>0</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>auto</li>
+                          </ul>
+                          }
+                        </code>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-1">
+                  Gibi bir çok araca
+                  <a href="https://getbootstrap.com/docs/4.3/utilities/" class="btn btn-outline-primary btn-sm" target="_blank">Bootstrap dokümantasyondan</a> ulaşabilirsiniz.
+                </p>
+                <div id="content-slide-info">
+                  <p>Konsoldan <kbd>F12</kbd> inceleyebilirsiniz.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="end-page" class="carousel-item">
+            <div class="container">
+              <div class="row vh-100">
+                <div class="col-12 my-auto">
+                  <h1 class="display-3 text-center">Teşekkürler</h1>
+                  <h4 class="mt-1 font-weight-light text-center">
+                    Bootstrap göründüğünden çok daha geniş,
+                    <a
+                      id="getbootstrap"
+                      href="https://getbootstrap.com/docs/4.3/getting-started/introduction/"
+                      class="btn btn-primary btn-sm"
+                      target="_blank"
+                      data-container="body"
+                      data-toggle="popover"
+                      data-placement="bottom"
+                      data-content="getbootstrap.com"
+                      >Bootstrap dokümantasyonu</a
+                    >
+                    incelemeyi unutmayın.
+                  </h4>
+                  <div class="row d-flex justify-content-center mt-5 pt-5">
+                    <div class="col-5 my-auto">
+                      <img class="float-right" src="./images/ahmetcetinkaya-logo.png" height="100px" width="100px" />
+                    </div>
+                    <div class="col-7 my-auto">
+                      <h2 class="font-weight-light">Ahmet Çetinkaya</h2>
+                      <a class="text-reset" href="mailto:ahmetcetinkaya0@outlook.com">ahmetcetinkaya0@outlook.com</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#bootstrapSlide" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#bootstrapSlide" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/prism.js"></script>
+    <style>
+      #container {
+        transition: background-color 3s;
+      }
+
+      #example-container-fluid,
+      #example-container {
+        display: none;
+        position: absolute;
+      }
+
+      #content-slide-info {
+        position: absolute;
+        bottom: 0;
+        font-size: 1rem;
+      }
+
+      .accordion {
+        font-size: 0.8rem;
+      }
+    </style>
+    <script>
+      $(document).keydown(e => {
+        if (e.keyCode === 37) $("#bootstrapSlide").carousel("prev");
+        else if (e.keyCode === 39) $("#bootstrapSlide").carousel("next");
+      });
+      $("#bootstrapSlide").on("slide.bs.carousel", () => {
+        setTimeout(() => {
+          switch ($("div.active")[0].id) {
+            case "container-page":
+              $("#container").css("background-color", "#40407a");
+              $("#example-container-fluid").fadeIn("slow");
+              $("#example-container").fadeIn("slow");
+              break;
+            case "end-page":
+              $("#getbootstrap").hover(e => {
+                $("#getbootstrap").popover("toggle");
+              });
+          }
+        }, 1000);
+        $("#container").removeAttr("style");
+        $("#example-container-fluid").hide();
+        $("#example-container").hide();
+      });
+      $("#example-form").change(e => {
+        e.currentTarget.classList.add("was-validated");
+        e.preventDefault();
+      });
+      $("#components-examples-accordion > div:last-child").click(() => {
+        $(".toast").toast({ autohide: false, delay: 1000 });
+        $("#components-page > div > div:nth-child(2) > div:nth-child(2)").toast("show");
+        setTimeout(() => $("#components-page > div > div:nth-child(2) > div:nth-child(1)").toast("show"), 2000);
+      });
+      $('[data-toggle="popover"]').popover();
+    </script>
+  </body>
+</html>
