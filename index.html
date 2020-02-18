@@ -17,19 +17,21 @@
     <div class="container-fluid text-white" style="background-color: #2c2c54;">
       <code id="example-container-fluid">container-fluid</code>
       <div id="bootstrapSlide" class="carousel slide" data-ride="carousel" data-interval="0">
-        <ol class="carousel-indicators">
-          <li data-target="#bootstrapSlide" data-slide-to="0" class="active"></li>
-          <li data-target="#bootstrapSlide" data-slide-to="1"></li>
-          <li data-target="#bootstrapSlide" data-slide-to="2"></li>
-          <li data-target="#bootstrapSlide" data-slide-to="3"></li>
-          <li data-target="#bootstrapSlide" data-slide-to="4"></li>
-          <li data-target="#bootstrapSlide" data-slide-to="5"></li>
-          <li data-target="#bootstrapSlide" data-slide-to="6"></li>
-          <li data-target="#bootstrapSlide" data-slide-to="7"></li>
-          <li data-target="#bootstrapSlide" data-slide-to="8"></li>
-        </ol>
+        <div class="d-none d-md-block d-lg-block d-xl-block">
+          <ol class="carousel-indicators">
+            <li data-target="#bootstrapSlide" data-slide-to="0" class="active"></li>
+            <li data-target="#bootstrapSlide" data-slide-to="1"></li>
+            <li data-target="#bootstrapSlide" data-slide-to="2"></li>
+            <li data-target="#bootstrapSlide" data-slide-to="3"></li>
+            <li data-target="#bootstrapSlide" data-slide-to="4"></li>
+            <li data-target="#bootstrapSlide" data-slide-to="5"></li>
+            <li data-target="#bootstrapSlide" data-slide-to="6"></li>
+            <li data-target="#bootstrapSlide" data-slide-to="7"></li>
+            <li data-target="#bootstrapSlide" data-slide-to="8"></li>
+          </ol>
+        </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" style="font-size: 1.5rem">
+          <div class="carousel-item active" style="font-size: 1.3rem">
             <div class="container">
               <div class="row vh-100">
                 <div class="col-6 my-auto">
@@ -39,9 +41,9 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item" style="font-size: 1.5rem">
+          <div class="carousel-item" style="font-size: 1.3rem">
             <div class="container">
-              <div class="row vh-100">
+              <div class="row vh-100 overflow-auto">
                 <div class="col-md-7 my-auto">
                   <h1>Bootstrap Nedir?</h1>
                   <p class="text-justify">
@@ -59,12 +61,12 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item" style="font-size: 1.5rem">
+          <div class="carousel-item" style="font-size: 1.3rem">
             <div class="container">
-              <div class="row vh-100">
+              <div class="row vh-100 overflow-auto">
                 <div class="col my-auto">
                   <h1>Neden Bootstrap Kullanmalı?</h1>
-                  <ul class="list-group text-justify">
+                  <ul class="text-justify">
                     <li>
                       Tasarımcılara büyük kolaylıklar sağlayarak zamandan kazanç sağlar. Sıfırdan aynı kodları tekrar tekrar kodlamak yerine önceden hazırlanmış kod kütüphanesinden
                       yardım alarak verimli bir süreçte projenizi geliştirirsiniz.
@@ -86,9 +88,9 @@
           </div>
           <div id="container-page" class="carousel-item">
             <div id="container" class="container">
-              <div class="row vh-100">
+              <div class="row vh-100 overflow-auto">
                 <code id="example-container">container</code>
-                <div class="col my-auto" style="font-size: 1.5rem">
+                <div class="col my-auto" style="font-size: 1.3rem">
                   <h1>Konteyner <span class="text-muted">(Container)</span> Sistemi</h1>
                   <p class="text-justify">
                     Konteyner sistemi Bootstrap içindeki en temel ve gerekli düzen öğesidir. Web arayüzünü sabit bir genişlik ile kaplayarak ekran oranına göre içeriklerin sabit
@@ -96,7 +98,7 @@
                   </p>
                   <br />
                   <p>Bootstrap'de sistemeri ve diğer bileşenleri kullanmak için ilgili sınıfı <span class="text-muted"></span> elementinize eklemeniz yeterli!</p>
-                  <div class="accordion" id="container-example-accordion" style="font-size: 1.5rem">
+                  <div class="accordion" id="container-example-accordion" style="font-size: 1.3rem">
                     <div class="card bg-dark">
                       <div class="card-header" id="c-headingOne">
                         <h2 class="mb-0">
@@ -138,9 +140,9 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item" style="font-size: 1.5rem">
+          <div class="carousel-item" style="font-size: 1.3rem">
             <div class="container">
-              <div class="row vh-100">
+              <div class="row vh-100 overflow-auto">
                 <div class="col my-auto">
                   <h1>Izgara <span class="text-muted">(Grid)</span> Sistemi</h1>
                   <p class="text-justify">
@@ -230,7 +232,7 @@
           <div class="carousel-item">
             <div class="container">
               <div class="row vh-100">
-                <div class="col-12 my-auto" style="font-size: 1.5rem">
+                <div class="col-12 my-auto" style="font-size: 1.3rem">
                   <h1>İçerik <span class="text-muted">(Content)</span></h1>
                   <p>Başlıklar, gövde metinleri, listeler, tablolar gibi birçok içeriği Bootstrap standartlarına uyarlanmış olarak kullanılabilir.</p>
                 </div>
@@ -294,7 +296,7 @@
           <div id="components-page" class="carousel-item">
             <div class="container">
               <div class="row vh-100">
-                <div class="col-12 my-auto" style="font-size: 1.5rem">
+                <div class="col-12 my-auto" style="font-size: 1.3rem">
                   <h1>Bileşenler <span class="text-muted">(Components)</span></h1>
                   <p>Aynı şekilde her web arayüzünde sıkça kullanılabilen bileşenleri bootstrap standartlarına uygun biçimde kolayca kullanılabilir. Bazı bileşenlere bakalım:</p>
                 </div>
@@ -804,7 +806,7 @@
           <div class="carousel-item">
             <div class="container">
               <div class="row vh-100">
-                <div class="col-12 my-auto" style="font-size: 1.5rem">
+                <div class="col-12 my-auto" style="font-size: 1.3rem">
                   <h1>Araçlar <span class="text-muted">(Utilities)</span></h1>
                   <p>Aynı şekilde web arayüzünlerinde sıkça kullanılabilen CSS komutlarını sadece class ekleyerek elemente dahil edebilirsiniz.</p>
                 </div>
@@ -1236,7 +1238,7 @@
       });
       $("#bootstrapSlide").on("slide.bs.carousel", () => {
         setTimeout(() => {
-          if ($("div.active")[0].id === container - page) {
+          if ($("div.active")[0].id === "container-page") {
             $("#container").css("background-color", "#40407a");
             $("#example-container-fluid").fadeIn("slow");
             $("#example-container").fadeIn("slow");
