@@ -234,22 +234,22 @@
                   <h1>İçerik <span class="text-muted">(Content)</span></h1>
                   <p>Başlıklar, gövde metinleri, listeler, tablolar gibi birçok içeriği Bootstrap standartlarına uyarlanmış olarak kullanılabilir.</p>
                 </div>
-                <div class="col-3 d-md-none d-lg-block">
+                <div class="col-lg-3 d-none d-lg-block d-xl-block">
                   <h1>h1.</h1>
                   <p class="h2">h2.</p>
                   <h3>h3.</h3>
                 </div>
-                <div class="col-3 d-md-none d-lg-block">
+                <div class="col-lg-3 d-none d-xl-block">
                   <h1 class="display-3">Display 3</h1>
                   <h1 class="display-4">Display 4</h1>
                 </div>
-                <div class="col-3 d-md-none d-lg-block">
+                <div class="col-lg-3 d-none d-lg-block d-xl-block">
                   <blockquote class="blockquote text-center">
                     <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                     <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                   </blockquote>
                 </div>
-                <div class="col-3 d-md-none d-lg-block">
+                <div class="col-lg-3 d-none d-lg-block d-xl-block">
                   <table class="table table-striped table-dark">
                     <thead class="thead-light">
                       <tr>
@@ -285,7 +285,7 @@
                   Gibi bir çok içerik düzenlemelerine
                   <a href="https://getbootstrap.com/docs/4.3/content/" class="btn btn-outline-primary btn-sm" target="_blank">Bootstrap dokümantasyondan</a> ulaşabilirsiniz.
                 </p>
-                <div id="content-slide-info">
+                <div id="content-slide-info" class="d-none d-xl-block">
                   <p>Konsoldan <kbd>F12</kbd> inceleyebilirsiniz.</p>
                 </div>
               </div>
@@ -746,7 +746,7 @@
                     Gibi bir çok bileşene
                     <a href="https://getbootstrap.com/docs/4.3/components" class="btn btn-outline-primary btn-sm" target="_blank">Bootstrap dokümantasyondan</a> ulaşabilirsiniz.
                   </p>
-                  <div id="content-slide-info">
+                  <div id="content-slide-info" class="d-none d-xl-block">
                     <p>Konsoldan <kbd>F12</kbd> inceleyebilirsiniz.</p>
                   </div>
                 </div>
@@ -809,7 +809,7 @@
                   <p>Aynı şekilde web arayüzünlerinde sıkça kullanılabilen CSS komutlarını sadece class ekleyerek elemente dahil edebilirsiniz.</p>
                 </div>
                 <div class="col-12">
-                  <div class="accordion" id="components-examples-accordion">
+                  <div class="accordion" id="utilities-examples-accordion">
                     <div class="card bg-dark">
                       <div class="card-header" id="heading1">
                         <h2 class="mb-0">
@@ -818,7 +818,7 @@
                           </a>
                         </h2>
                       </div>
-                      <div id="collapseOne" class="collapse" aria-labelledby="heading1" data-parent="#components-examples-accordion">
+                      <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#utilities-examples-accordion">
                         <div class="card-body d-flex justify-content-around">
                           <div class="border" style="width:75px; height: 75px;"></div>
                           <div class="border-top" style="width:75px; height: 75px;"></div>
@@ -849,297 +849,297 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="card bg-dark">
-                    <div class="card-header" id="heading2">
-                      <h2 class="mb-0">
-                        <a class="btn btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                          Renkler <span class="text-muted">(Colors)</span>
-                        </a>
-                      </h2>
-                    </div>
-                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#components-examples-accordion" style="background-color: rgb(44, 44, 44);">
-                      <div class="card-body d-flex">
-                        <p class="text-primary">.text-primary</p>
-                        <p class="text-secondary">.text-secondary</p>
-                        <p class="text-success">.text-success</p>
-                        <p class="text-danger">.text-danger</p>
-                        <p class="text-warning">.text-warning</p>
-                        <p class="text-info">.text-info</p>
-                        <p class="text-light bg-dark">.text-light</p>
-                        <p class="text-dark bg-light">.text-dark</p>
-                        <p class="text-body bg-light">.text-body</p>
-                        <p class="text-muted bg-light">.text-muted</p>
-                        <p class="text-white bg-dark">.text-white</p>
-                        <p class="text-black-50 bg-light">.text-black-50</p>
-                        <p class="text-white-50 bg-dark">.text-white-50</p>
-                      </div>
-                      <div class="card-body">
-                        <div class="p-1 bg-primary text-white">.bg-primary</div>
-                        <div class="p-1  bg-secondary text-white">.bg-secondary</div>
-                        <div class="p-1  bg-success text-white">.bg-success</div>
-                        <div class="p-1  bg-danger text-white">.bg-danger</div>
-                        <div class="p-1  bg-warning text-dark">.bg-warning</div>
-                        <div class="p-1  bg-info text-white">.bg-info</div>
-                        <div class="p-1  bg-light text-dark">.bg-light</div>
-                        <div class="p-1  bg-dark text-white">.bg-dark</div>
-                        <div class="p-1  bg-white text-dark">.bg-white</div>
-                        <div class="p-1  bg-transparent text-dark">.bg-transparent</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card bg-dark">
-                    <div class="card-header" id="heading3">
-                      <h2 class="mb-0">
-                        <a class="btn btn-block" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
-                          Display
-                        </a>
-                      </h2>
-                    </div>
-                    <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#components-examples-accordion">
-                      <div class="card-body text-center">
-                        <code>.d-{none / inline / inline-block / block / table / table-cell / table-row / flex / inline-flex}-{sm, md, lg, ve xl.}</code>
-                        <div class="d-inline p-2 bg-primary text-white mb-2">d-inline</div>
-                        <span class="d-block p-2 bg-primary text-white mt-2 mb-2">d-block</span>
 
+                    <div class="card bg-dark">
+                      <div class="card-header" id="heading2">
+                        <h2 class="mb-0">
+                          <a class="btn btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            Renkler <span class="text-muted">(Colors)</span>
+                          </a>
+                        </h2>
+                      </div>
+                      <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#utilities-examples-accordion" style="background-color: rgb(44, 44, 44);">
+                        <div class="card-body d-flex">
+                          <p class="text-primary">.text-primary</p>
+                          <p class="text-secondary">.text-secondary</p>
+                          <p class="text-success">.text-success</p>
+                          <p class="text-danger">.text-danger</p>
+                          <p class="text-warning">.text-warning</p>
+                          <p class="text-info">.text-info</p>
+                          <p class="text-light bg-dark">.text-light</p>
+                          <p class="text-dark bg-light">.text-dark</p>
+                          <p class="text-body bg-light">.text-body</p>
+                          <p class="text-muted bg-light">.text-muted</p>
+                          <p class="text-white bg-dark">.text-white</p>
+                          <p class="text-black-50 bg-light">.text-black-50</p>
+                          <p class="text-white-50 bg-dark">.text-white-50</p>
+                        </div>
                         <div class="card-body">
-                          <table class="mx-auto">
-                            <thead>
-                              <tr>
-                                <th>Screen Size</th>
-                                <th>Class</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>Tüm boyutlarda gizle</td>
-                                <td><code class=" highlighter-rouge">.d-none </code></td>
-                              </tr>
-                              <tr>
-                                <td>Sadece xs'de gizle</td>
-                                <td><code class="highlighter-rouge">.d-none .d-sm-block</code></td>
-                              </tr>
-                              <tr>
-                                <td>Sadece sm'de gizle</td>
-                                <td><code class="highlighter-rouge">.d-sm-none .d-md-block</code></td>
-                              </tr>
-                              <tr>
-                                <td>Sadece md'de gizle</td>
-                                <td><code class="highlighter-rouge">.d-md-none .d-lg-block</code></td>
-                              </tr>
-                              <tr>
-                                <td>Sadece lg'de gizle</td>
-                                <td><code class="highlighter-rouge">.d-lg-none .d-xl-block</code></td>
-                              </tr>
-                              <tr>
-                                <td>Sadece xl'de gizle</td>
-                                <td><code class="highlighter-rouge">.d-xl-none</code></td>
-                              </tr>
-                              <tr>
-                                <td>Tüm boyutlarda Göster</td>
-                                <td><code class="highlighter-rouge">.d-block</code></td>
-                              </tr>
-                              <tr>
-                                <td>Sadece xs'de göster</td>
-                                <td><code class="highlighter-rouge">.d-block .d-sm-none</code></td>
-                              </tr>
-                              <tr>
-                                <td>Sadece sm'de göster</td>
-                                <td><code class="highlighter-rouge">.d-none .d-sm-block .d-md-none</code></td>
-                              </tr>
-                              <tr>
-                                <td>Sadece md'de göster</td>
-                                <td><code class="highlighter-rouge">.d-none .d-md-block .d-lg-none</code></td>
-                              </tr>
-                              <tr>
-                                <td>Sadece lg'de göster</td>
-                                <td><code class="highlighter-rouge">.d-none .d-lg-block .d-xl-none</code></td>
-                              </tr>
-                              <tr>
-                                <td>Sadece xl'de göster</td>
-                                <td><code class="highlighter-rouge">.d-none .d-xl-block</code></td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <div class="p-1 bg-primary text-white">.bg-primary</div>
+                          <div class="p-1  bg-secondary text-white">.bg-secondary</div>
+                          <div class="p-1  bg-success text-white">.bg-success</div>
+                          <div class="p-1  bg-danger text-white">.bg-danger</div>
+                          <div class="p-1  bg-warning text-dark">.bg-warning</div>
+                          <div class="p-1  bg-info text-white">.bg-info</div>
+                          <div class="p-1  bg-light text-dark">.bg-light</div>
+                          <div class="p-1  bg-dark text-white">.bg-dark</div>
+                          <div class="p-1  bg-white text-dark">.bg-white</div>
+                          <div class="p-1  bg-transparent text-dark">.bg-transparent</div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class=" card bg-dark">
-                    <div class="card-header" id="heading4">
-                      <h2 class="mb-0">
-                        <a class="btn btn-block" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
-                          Flex
-                        </a>
-                      </h2>
-                    </div>
-                    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#components-examples-accordion">
-                      <div class="card-body">
-                        <div class="d-flex flex-row mb-3 border border-secondary">
-                          <div class="p-2 border ">Flex item 1</div>
-                          <div class="p-2 border ">Flex item 2</div>
-                          <div class="p-2 border ">Flex item 3</div>
-                        </div>
-                        <div class="d-flex flex-row-reverse border border-secondary">
-                          <div class="p-2 border ">Flex item 1</div>
-                          <div class="p-2 border ">Flex item 2</div>
-                          <div class="p-2 border ">Flex item 3</div>
-                        </div>
-                        <div class="d-flex justify-content-start border border-secondary mb-3">
-                          <div class="p-2 border ">Flex item</div>
-                          <div class="p-2 border ">Flex item</div>
-                          <div class="p-2 border ">Flex item</div>
-                        </div>
-                        <div class="d-flex justify-content-end border  border-secondary mb-3">
-                          <div class="p-2 border ">Flex item</div>
-                          <div class="p-2 border ">Flex item</div>
-                          <div class="p-2 border ">Flex item</div>
-                        </div>
-                        <div class="d-flex justify-content-center border border-secondary mb-3">
-                          <div class="p-2 border ">Flex item</div>
-                          <div class="p-2 border ">Flex item</div>
-                          <div class="p-2 border ">Flex item</div>
-                        </div>
-                        <div class="d-flex justify-content-between border  border-secondary mb-3">
-                          <div class="p-2 border ">Flex item</div>
-                          <div class="p-2 border ">Flex item</div>
-                          <div class="p-2 border ">Flex item</div>
-                        </div>
-                        <div class="d-flex justify-content-around border border-secondary">
-                          <div class="p-2 border ">Flex item</div>
-                          <div class="p-2 border ">Flex item</div>
-                          <div class="p-2 border ">Flex item</div>
-                        </div>
+                    <div class="card bg-dark">
+                      <div class="card-header" id="heading3">
+                        <h2 class="mb-0">
+                          <a class="btn btn-block" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                            Display
+                          </a>
+                        </h2>
                       </div>
-                    </div>
-                  </div>
-                  <div class="card bg-dark">
-                    <div class="card-header" id="heading5">
-                      <h2 class="mb-0">
-                        <a class="btn btn-block" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
-                          Float
-                        </a>
-                      </h2>
-                    </div>
-                    <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#components-examples-accordion">
-                      <div class="card-body">
-                        <div class="float-left">Float left on all viewport sizes</div>
-                        <br />
-                        <div class="float-right">Float right on all viewport sizes</div>
-                        <br />
-                        <div class="float-none">Don't float on all viewport sizes</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card bg-dark">
-                    <div class="card-header" id="heading6">
-                      <h2 class="mb-0">
-                        <a class="btn btn-block" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
-                          Overflow
-                        </a>
-                      </h2>
-                    </div>
-                    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#components-examples-accordion">
-                      <div class="card-body text-dark">
-                        <div class="d-flex justify-content-center">
-                          <div class="overflow-auto p-3 mb-3 mb-md-0 mr-md-3 bg-light" style="max-width: 260px; max-height: 100px;">
-                            This is an example of using <code>.overflow-auto</code> on an element with set width and height dimensions. By design, this content will vertically
-                            scroll.
-                          </div>
-                          <div class="overflow-hidden p-3 bg-light" style="max-width: 260px; max-height: 100px;">
-                            This is an example of using <code>.overflow-hidden</code> on an element with set width and height dimensions.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                      <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#utilities-examples-accordion">
+                        <div class="card-body text-center">
+                          <code>.d-{none / inline / inline-block / block / table / table-cell / table-row / flex / inline-flex}-{sm, md, lg, ve xl.}</code>
+                          <div class="d-inline p-2 bg-primary text-white mb-2">d-inline</div>
+                          <span class="d-block p-2 bg-primary text-white mt-2 mb-2">d-block</span>
 
-                  <div class="card bg-dark">
-                    <div class="card-header" id="heading7">
-                      <h2 class="mb-0">
-                        <a class="btn btn-block" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
-                          Sizing
-                        </a>
-                      </h2>
-                    </div>
-                    <div id="collapse7" class="collapse mx-auto" aria-labelledby="heading7" data-parent="#components-examples-accordion">
-                      <div class="text-dark border border-secondary">
-                        <div class="w-25" style="background-color: #eee;">Width 25%</div>
-                        <div class="w-50" style="background-color: #eee;">Width 50%</div>
-                        <div class="w-75" style="background-color: #eee;">Width 75%</div>
-                        <div class="w-100" style="background-color: #eee;">Width 100%</div>
-                        <div class="w-auto" style="background-color: #eee;">Width auto</div>
-                      </div>
-                      <div class="text-dark mt-2 mb-2 border border-secondary">
-                        <div style="height: 100px;">
-                          <div class="h-25 d-inline-block" style="width: 120px; background-color: #eee">Height 25%</div>
-                          <div class="h-50 d-inline-block" style="width: 120px; background-color: #eee">Height 50%</div>
-                          <div class="h-75 d-inline-block" style="width: 120px; background-color: #eee">Height 75%</div>
-                          <div class="h-100 d-inline-block" style="width: 120px; background-color: #eee">Height 100%</div>
-                          <div class="h-auto d-inline-block" style="width: 120px; background-color: #eee">Height auto</div>
+                          <div class="card-body">
+                            <table class="mx-auto">
+                              <thead>
+                                <tr>
+                                  <th>Screen Size</th>
+                                  <th>Class</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Tüm boyutlarda gizle</td>
+                                  <td><code class=" highlighter-rouge">.d-none </code></td>
+                                </tr>
+                                <tr>
+                                  <td>Sadece xs'de gizle</td>
+                                  <td><code class="highlighter-rouge">.d-none .d-sm-block</code></td>
+                                </tr>
+                                <tr>
+                                  <td>Sadece sm'de gizle</td>
+                                  <td><code class="highlighter-rouge">.d-sm-none .d-md-block</code></td>
+                                </tr>
+                                <tr>
+                                  <td>Sadece md'de gizle</td>
+                                  <td><code class="highlighter-rouge">.d-md-none .d-lg-block</code></td>
+                                </tr>
+                                <tr>
+                                  <td>Sadece lg'de gizle</td>
+                                  <td><code class="highlighter-rouge">.d-lg-none .d-xl-block</code></td>
+                                </tr>
+                                <tr>
+                                  <td>Sadece xl'de gizle</td>
+                                  <td><code class="highlighter-rouge">.d-xl-none</code></td>
+                                </tr>
+                                <tr>
+                                  <td>Tüm boyutlarda Göster</td>
+                                  <td><code class="highlighter-rouge">.d-block</code></td>
+                                </tr>
+                                <tr>
+                                  <td>Sadece xs'de göster</td>
+                                  <td><code class="highlighter-rouge">.d-block .d-sm-none</code></td>
+                                </tr>
+                                <tr>
+                                  <td>Sadece sm'de göster</td>
+                                  <td><code class="highlighter-rouge">.d-none .d-sm-block .d-md-none</code></td>
+                                </tr>
+                                <tr>
+                                  <td>Sadece md'de göster</td>
+                                  <td><code class="highlighter-rouge">.d-none .d-md-block .d-lg-none</code></td>
+                                </tr>
+                                <tr>
+                                  <td>Sadece lg'de göster</td>
+                                  <td><code class="highlighter-rouge">.d-none .d-lg-block .d-xl-none</code></td>
+                                </tr>
+                                <tr>
+                                  <td>Sadece xl'de göster</td>
+                                  <td><code class="highlighter-rouge">.d-none .d-xl-block</code></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                         </div>
                       </div>
-                      <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
-                        <div class="mh-100 border border-secondary" style="width: 100px; height: 200px; background-color: rgba(0,0,255,0.1);">Max-height 100%</div>
+                    </div>
+                    <div class=" card bg-dark">
+                      <div class="card-header" id="heading4">
+                        <h2 class="mb-0">
+                          <a class="btn btn-block" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                            Flex
+                          </a>
+                        </h2>
+                      </div>
+                      <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#utilities-examples-accordion">
+                        <div class="card-body">
+                          <div class="d-flex flex-row mb-3 border border-secondary">
+                            <div class="p-2 border ">Flex item 1</div>
+                            <div class="p-2 border ">Flex item 2</div>
+                            <div class="p-2 border ">Flex item 3</div>
+                          </div>
+                          <div class="d-flex flex-row-reverse border border-secondary">
+                            <div class="p-2 border ">Flex item 1</div>
+                            <div class="p-2 border ">Flex item 2</div>
+                            <div class="p-2 border ">Flex item 3</div>
+                          </div>
+                          <div class="d-flex justify-content-start border border-secondary mb-3">
+                            <div class="p-2 border ">Flex item</div>
+                            <div class="p-2 border ">Flex item</div>
+                            <div class="p-2 border ">Flex item</div>
+                          </div>
+                          <div class="d-flex justify-content-end border  border-secondary mb-3">
+                            <div class="p-2 border ">Flex item</div>
+                            <div class="p-2 border ">Flex item</div>
+                            <div class="p-2 border ">Flex item</div>
+                          </div>
+                          <div class="d-flex justify-content-center border border-secondary mb-3">
+                            <div class="p-2 border ">Flex item</div>
+                            <div class="p-2 border ">Flex item</div>
+                            <div class="p-2 border ">Flex item</div>
+                          </div>
+                          <div class="d-flex justify-content-between border  border-secondary mb-3">
+                            <div class="p-2 border ">Flex item</div>
+                            <div class="p-2 border ">Flex item</div>
+                            <div class="p-2 border ">Flex item</div>
+                          </div>
+                          <div class="d-flex justify-content-around border border-secondary">
+                            <div class="p-2 border ">Flex item</div>
+                            <div class="p-2 border ">Flex item</div>
+                            <div class="p-2 border ">Flex item</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="card bg-dark">
-                    <div class="card-header" id="heading8">
-                      <h2 class="mb-0">
-                        <a class="btn btn-block" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
-                          Spacing
-                        </a>
-                      </h2>
+                    <div class="card bg-dark">
+                      <div class="card-header" id="heading5">
+                        <h2 class="mb-0">
+                          <a class="btn btn-block" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                            Float
+                          </a>
+                        </h2>
+                      </div>
+                      <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#utilities-examples-accordion">
+                        <div class="card-body">
+                          <div class="float-left">Float left on all viewport sizes</div>
+                          <br />
+                          <div class="float-right">Float right on all viewport sizes</div>
+                          <br />
+                          <div class="float-none">Don't float on all viewport sizes</div>
+                        </div>
+                      </div>
                     </div>
-                    <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#components-examples-accordion">
-                      <div class="card-body d-flex justify-content-around" style="font-size: 1.1rem;">
-                        <code
-                          >{
-                          <ul>
-                            <li>m <span class=" text-muted">margin</span></li>
-                            <li>p <span class="text-muted">padding</span></li>
-                          </ul>
-                          }
-                        </code>
-                        <code
-                          >{
-                          <ul>
-                            <li>blank <span class="text-muted">4 sides</span></li>
-                            <li>t <span class="text-muted">top</span></li>
-                            <li>b <span class="text-muted">bottom</span></li>
-                            <li>l <span class="text-muted">left</span></li>
-                            <li>r <span class="text-muted">right</span></li>
-                            <li>x <span class="text-muted">left and right</span></li>
-                            <li>y <span class="text-muted">top and bottom</span></li>
-                          </ul>
-                          }
-                        </code>
-                        <code class="my-auto">-</code>
-                        <code
-                          >{
-                          <ul>
-                            <li>m</li>
-                            <li>md</li>
-                            <li>lg</li>
-                            <li>xl</li>
-                          </ul>
-                          }
-                        </code>
-                        <code class="my-auto">-</code>
-                        <code
-                          >{
-                          <ul>
-                            <li>0</li>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
-                            <li>auto</li>
-                          </ul>
-                          }
-                        </code>
+                    <div class="card bg-dark">
+                      <div class="card-header" id="heading6">
+                        <h2 class="mb-0">
+                          <a class="btn btn-block" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                            Overflow
+                          </a>
+                        </h2>
+                      </div>
+                      <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#utilities-examples-accordion">
+                        <div class="card-body text-dark">
+                          <div class="d-flex justify-content-center">
+                            <div class="overflow-auto p-3 mb-3 mb-md-0 mr-md-3 bg-light" style="max-width: 260px; max-height: 100px;">
+                              This is an example of using <code>.overflow-auto</code> on an element with set width and height dimensions. By design, this content will vertically
+                              scroll.
+                            </div>
+                            <div class="overflow-hidden p-3 bg-light" style="max-width: 260px; max-height: 100px;">
+                              This is an example of using <code>.overflow-hidden</code> on an element with set width and height dimensions.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark">
+                      <div class="card-header" id="heading7">
+                        <h2 class="mb-0">
+                          <a class="btn btn-block" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                            Sizing
+                          </a>
+                        </h2>
+                      </div>
+                      <div id="collapse7" class="collapse mx-auto" aria-labelledby="heading7" data-parent="#utilities-examples-accordion">
+                        <div class="text-dark border border-secondary">
+                          <div class="w-25" style="background-color: #eee;">Width 25%</div>
+                          <div class="w-50" style="background-color: #eee;">Width 50%</div>
+                          <div class="w-75" style="background-color: #eee;">Width 75%</div>
+                          <div class="w-100" style="background-color: #eee;">Width 100%</div>
+                          <div class="w-auto" style="background-color: #eee;">Width auto</div>
+                        </div>
+                        <div class="text-dark mt-2 mb-2 border border-secondary">
+                          <div style="height: 100px;">
+                            <div class="h-25 d-inline-block" style="width: 120px; background-color: #eee">Height 25%</div>
+                            <div class="h-50 d-inline-block" style="width: 120px; background-color: #eee">Height 50%</div>
+                            <div class="h-75 d-inline-block" style="width: 120px; background-color: #eee">Height 75%</div>
+                            <div class="h-100 d-inline-block" style="width: 120px; background-color: #eee">Height 100%</div>
+                            <div class="h-auto d-inline-block" style="width: 120px; background-color: #eee">Height auto</div>
+                          </div>
+                        </div>
+                        <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+                          <div class="mh-100 border border-secondary" style="width: 100px; height: 200px; background-color: rgba(0,0,255,0.1);">Max-height 100%</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark">
+                      <div class="card-header" id="heading8">
+                        <h2 class="mb-0">
+                          <a class="btn btn-block" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                            Spacing
+                          </a>
+                        </h2>
+                      </div>
+                      <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#utilities-examples-accordion">
+                        <div class="card-body d-flex justify-content-around" style="font-size: 1.1rem;">
+                          <code
+                            >{
+                            <ul>
+                              <li>m <span class=" text-muted">margin</span></li>
+                              <li>p <span class="text-muted">padding</span></li>
+                            </ul>
+                            }
+                          </code>
+                          <code
+                            >{
+                            <ul>
+                              <li>blank <span class="text-muted">4 sides</span></li>
+                              <li>t <span class="text-muted">top</span></li>
+                              <li>b <span class="text-muted">bottom</span></li>
+                              <li>l <span class="text-muted">left</span></li>
+                              <li>r <span class="text-muted">right</span></li>
+                              <li>x <span class="text-muted">left and right</span></li>
+                              <li>y <span class="text-muted">top and bottom</span></li>
+                            </ul>
+                            }
+                          </code>
+                          <code class="my-auto">-</code>
+                          <code
+                            >{
+                            <ul>
+                              <li>m</li>
+                              <li>md</li>
+                              <li>lg</li>
+                              <li>xl</li>
+                            </ul>
+                            }
+                          </code>
+                          <code class="my-auto">-</code>
+                          <code
+                            >{
+                            <ul>
+                              <li>0</li>
+                              <li>1</li>
+                              <li>2</li>
+                              <li>3</li>
+                              <li>4</li>
+                              <li>5</li>
+                              <li>auto</li>
+                            </ul>
+                            }
+                          </code>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1148,7 +1148,7 @@
                   Gibi bir çok araca
                   <a href="https://getbootstrap.com/docs/4.3/utilities/" class="btn btn-outline-primary btn-sm" target="_blank">Bootstrap dokümantasyondan</a> ulaşabilirsiniz.
                 </p>
-                <div id="content-slide-info">
+                <div id="content-slide-info" class="d-none d-xl-block">
                   <p>Konsoldan <kbd>F12</kbd> inceleyebilirsiniz.</p>
                 </div>
               </div>
@@ -1162,14 +1162,12 @@
                   <h4 class="mt-1 font-weight-light text-center">
                     Bootstrap göründüğünden çok daha geniş,
                     <a
-                      id="getbootstrap"
                       href="https://getbootstrap.com/docs/4.3/getting-started/introduction/"
                       class="btn btn-primary btn-sm"
                       target="_blank"
-                      data-container="body"
-                      data-toggle="popover"
+                      data-toggle="tooltip"
                       data-placement="bottom"
-                      data-content="getbootstrap.com"
+                      title="getbootstrap.com"
                       >Bootstrap dokümantasyonu</a
                     >
                     incelemeyi unutmayın.
@@ -1238,16 +1236,10 @@
       });
       $("#bootstrapSlide").on("slide.bs.carousel", () => {
         setTimeout(() => {
-          switch ($("div.active")[0].id) {
-            case "container-page":
-              $("#container").css("background-color", "#40407a");
-              $("#example-container-fluid").fadeIn("slow");
-              $("#example-container").fadeIn("slow");
-              break;
-            case "end-page":
-              $("#getbootstrap").hover(e => {
-                $("#getbootstrap").popover("toggle");
-              });
+          if ($("div.active")[0].id === container - page) {
+            $("#container").css("background-color", "#40407a");
+            $("#example-container-fluid").fadeIn("slow");
+            $("#example-container").fadeIn("slow");
           }
         }, 1000);
         $("#container").removeAttr("style");
@@ -1263,7 +1255,7 @@
         $("#components-page > div > div:nth-child(2) > div:nth-child(2)").toast("show");
         setTimeout(() => $("#components-page > div > div:nth-child(2) > div:nth-child(1)").toast("show"), 2000);
       });
-      $('[data-toggle="popover"]').popover();
+      $('[data-toggle="tooltip"]').tooltip();
     </script>
   </body>
 </html>
